@@ -1,0 +1,47 @@
+/*
+			  :::    ::::::::::: :::      ::::::::  
+			  :+:        :+:   :+: :+:   :+:    :+: 
+			  +:+        +:+  +:+   +:+  +:+        
+			  +#+        +#+ +#++:++#++: +#+        
+			  +#+        +#+ +#+     +#+ +#+        
+			  #+#        #+# #+#     #+# #+#    #+# 
+			  ########## ### ###     ###  ########  
+^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^
+|| 60 PLAYERS || CO-OP MISSION || ESCALATION DYNAMIC WAR SANDBOX || 
+||						VERSION 0.01a							 ||
+^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^	
+*	  Escalation is a 60 player co-op scenario that puts the      *
+*     player in a dynamic sandbox environment. Dynamic miss-      * 
+*	  ions and warzones that are persistent through server		  *
+*     restarts. 												  * 
+*	  Mission Written by: Imperator [LTac] and Cuken [LTac]       *
+^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^	
+*/ 
+
+author = "Imperator [LTac] and Cuken [LTac]";
+OnLoadName = "Escalation Altis [v0.01a]";
+OnLoadMission = "Two sides struggle for control of Altis while an active insurgency decides what side to take."
+enableDebugConsole = 1;
+disabledAI = 1;
+
+// Disable Global and Command Channels
+disableChannels[]={0,2};
+
+class Header
+{
+	gameType = Sandbox;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+// Game Parameters for Startup Modification
+class Params 
+{
+	
+};
+
+//
+class cfgNotifications 
+{
+	
+};
