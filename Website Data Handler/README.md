@@ -1,0 +1,1 @@
+Current thought process is to use an HTTP Post method to inject data into a database for storage. Using the HTTP post method will require a website to service the POST method and transfer data to the database layer.
