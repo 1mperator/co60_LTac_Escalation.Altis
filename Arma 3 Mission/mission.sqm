@@ -4,11 +4,17 @@ class Mission
 	addOns[]=
 	{
 		"a3_map_altis",
-		"a3_characters_f_gamma"
+		"a3_characters_f_gamma",
+		"A3_Armor_F_APC_Wheeled_03",
+		"A3_Armor_F_Panther",
+		"A3_Armor_F_Marid"
 	};
 	addOnsAuto[]=
 	{
 		"a3_characters_f_gamma",
+		"A3_Armor_F_APC_Wheeled_03",
+		"A3_Armor_F_Panther",
+		"A3_Armor_F_Marid",
 		"a3_map_altis"
 	};
 	randomSeed=11179994;
@@ -43,7 +49,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14878.123,17.947834,16425.25};
+					position[]={14657.369,17.91,16757.852};
+					azimut=-29.55862;
 					id=0;
 					side="WEST";
 					vehicle="B_G_Soldier_F";
@@ -54,9 +61,40 @@ class Mission
 			};
 		};
 	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={14640.598,17.91,16759.096};
+			azimut=135.22487;
+			id=1;
+			side="EMPTY";
+			vehicle="I_APC_Wheeled_03_cannon_F";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={14647.248,17.91,16766.053};
+			azimut=136.0627;
+			id=2;
+			side="EMPTY";
+			vehicle="B_APC_Tracked_01_rcws_F";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={14654.969,17.91,16772.596};
+			azimut=134.50868;
+			id=3;
+			side="EMPTY";
+			vehicle="O_APC_Wheeled_02_rcws_F";
+			skill=0.60000002;
+		};
+	};
 	class Markers
 	{
-		items=98;
+		items=100;
 		class Item0
 		{
 			position[]={20790.125,36.828861,6733.8262};
@@ -643,6 +681,18 @@ class Mission
 		{
 			position[]={8231.2559,14.179117,10886.905};
 			name="Edessa Industrial District";
+			type="Empty";
+		};
+		class Item98
+		{
+			position[]={18719.352,209.26424,10210.373};
+			name="Didymos Wind Farm";
+			type="Empty";
+		};
+		class Item99
+		{
+			position[]={18078.564,18.367979,19178.643};
+			name="Facility Epsilon";
 			type="Empty";
 		};
 	};
