@@ -3,10 +3,12 @@ class Mission
 {
 	addOns[]=
 	{
-		"a3_map_altis"
+		"a3_map_altis",
+		"a3_characters_f_gamma"
 	};
 	addOnsAuto[]=
 	{
+		"a3_characters_f_gamma",
 		"a3_map_altis"
 	};
 	randomSeed=11179994;
@@ -29,6 +31,638 @@ class Mission
 		forecastFogBase=0.001;
 		startFogDecay=0.0049999999;
 		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14878.123,17.947834,16425.25};
+					id=0;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=98;
+		class Item0
+		{
+			position[]={20790.125,36.828861,6733.8262};
+			name="Selakano";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={21654.941,14.37212,7587.1563};
+			name="Feres";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={22709.193,14.028733,6914.2144};
+			name="Agia Pelagia";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={20547.881,34.922379,8887.8701};
+			name="Panagia";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={14958.367,6.1806445,11121.063};
+			name="Faronaki";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={16785.531,20.162977,12615.59};
+			name="Pyrgos";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={19391.6,38.323727,13271.507};
+			name="Dorida";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={18141.732,25.446918,15245.709};
+			name="Charkia";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={21380.383,18.865398,16322.205};
+			name="Kalochori";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={20968.768,41.367294,16973.107};
+			name="Paros";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={18786.713,31.877129,16603.807};
+			name="Rodopoli";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={20237.713,54.954113,11657.772};
+			name="Chalkeia";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={19370.074,38.89542,17624.76};
+			name="Agios Petros";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={20315.123,49.986187,18644.83};
+			name="Agios Georgios";
+			type="Empty";
+		};
+		class Item14
+		{
+			position[]={23197.484,14.178415,19971.717};
+			name="Ioannia";
+			type="Empty";
+		};
+		class Item15
+		{
+			position[]={23954.354,14.713354,20161.879};
+			name="Definaki";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={25635.756,20.905956,21352.518};
+			name="Sofia";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={27014.467,28.529491,23244.031};
+			name="Molos";
+			type="Empty";
+		};
+		class Item18
+		{
+			position[]={26902.584,21.169401,24696.969};
+			name="Molos Airfield";
+			type="Empty";
+		};
+		class Item19
+		{
+			position[]={26824.41,17.647467,21398.547};
+			name="Gatolia";
+			type="Empty";
+		};
+		class Item20
+		{
+			position[]={23077.398,3.1900001,18741.441};
+			name="Almyra Airfield";
+			type="Empty";
+		};
+		class Item21
+		{
+			position[]={20836.766,12.146037,19350.611};
+			name="Pefkas Research Center";
+			type="Empty";
+		};
+		class Item22
+		{
+			position[]={16684.24,18.248272,16142.369};
+			name="Anthrakia";
+			type="Empty";
+		};
+		class Item23
+		{
+			position[]={16362.621,27.186602,17303.881};
+			name="Telos";
+			type="Empty";
+		};
+		class Item24
+		{
+			position[]={16085.822,13.446604,16866.967};
+			name="Telos Research Facility";
+			type="Empty";
+		};
+		class Item25
+		{
+			position[]={17841.725,11.22859,18134.457};
+			name="Kalithea";
+			type="Empty";
+		};
+		class Item26
+		{
+			position[]={14448.186,18.988937,17687.992};
+			name="Gravia";
+			type="Empty";
+		};
+		class Item27
+		{
+			position[]={14052.771,27.670237,18667.797};
+			name="Athira";
+			type="Empty";
+		};
+		class Item28
+		{
+			position[]={14648.48,46.117325,20765.09};
+			name="Frini";
+			type="Empty";
+		};
+		class Item29
+		{
+			position[]={14302.241,19.489649,16269.181};
+			name="Altis Airbase";
+			type="Empty";
+		};
+		class Item30
+		{
+			position[]={14647.252,17.91,16792.197};
+			name="Altis International Airport";
+			type="Empty";
+		};
+		class Item31
+		{
+			position[]={15187.102,17.91,17245.795};
+			name="AIA Military Garrison";
+			type="Empty";
+		};
+		class Item32
+		{
+			position[]={12983.222,27.441889,15074.145};
+			name="Stavros";
+			type="Empty";
+		};
+		class Item33
+		{
+			position[]={12401.231,22.489897,15684.32};
+			name="Lakka";
+			type="Empty";
+		};
+		class Item34
+		{
+			position[]={12544.534,20.230993,14329.547};
+			name="Neochori";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={15445.798,10.76158,16222.542};
+			name="Telos Powerplant";
+			type="Empty";
+		};
+		class Item36
+		{
+			position[]={12611.92,33.919998,16391.744};
+			name="Lakka Industrial District";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={12846.192,86.387184,16712.799};
+			name="Lakka Garrison";
+			type="Empty";
+		};
+		class Item38
+		{
+			position[]={16687.195,3.5316651,20465.668};
+			name="Agia Triada";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={12852.152,46.141636,19684.119};
+			name="Ifestonia";
+			type="Empty";
+		};
+		class Item40
+		{
+			position[]={11781.46,50.96579,18292.926};
+			name="Koroni";
+			type="Empty";
+		};
+		class Item41
+		{
+			position[]={10961.277,28.25288,13405.893};
+			name="Poliakko";
+			type="Empty";
+		};
+		class Item42
+		{
+			position[]={11743.003,12.876532,13710.324};
+			name="Katalaki";
+			type="Empty";
+		};
+		class Item43
+		{
+			position[]={11128.783,43.842209,14588.201};
+			name="Alikampos";
+			type="Empty";
+		};
+		class Item44
+		{
+			position[]={9338.2119,125.00172,15915.615};
+			name="Agios Dionysios";
+			type="Empty";
+		};
+		class Item45
+		{
+			position[]={10696.561,25.509235,12275.068};
+			name="Therisa";
+			type="Empty";
+		};
+		class Item46
+		{
+			position[]={11618.104,22.87254,11908.644};
+			name="AAC Airfield";
+			type="Empty";
+		};
+		class Item47
+		{
+			position[]={9017.707,25.433559,12008.465};
+			name="Zaros";
+			type="Empty";
+		};
+		class Item48
+		{
+			position[]={9470.9717,15.953299,11682.64};
+			name="Zaros Suburbs";
+			type="Empty";
+		};
+		class Item49
+		{
+			position[]={5095.1538,50.39397,11265.564};
+			name="Panochori";
+			type="Empty";
+		};
+		class Item50
+		{
+			position[]={4116.2539,45.611561,11685.174};
+			name="Neri";
+			type="Empty";
+		};
+		class Item51
+		{
+			position[]={3734.8882,10.536333,10245.448};
+			name="Athanos";
+			type="Empty";
+		};
+		class Item52
+		{
+			position[]={3554.2913,16.433365,12947.439};
+			name="Kavala";
+			type="Empty";
+		};
+		class Item53
+		{
+			position[]={3786.9998,15.246681,13662.226};
+			name="Aggelochori";
+			type="Empty";
+		};
+		class Item54
+		{
+			position[]={7239.9268,4.4234891,11036.17};
+			name="Edessa";
+			type="Empty";
+		};
+		class Item55
+		{
+			position[]={4217.1094,18.083355,15048.851};
+			name="Magos Power Plant";
+			type="Empty";
+		};
+		class Item56
+		{
+			position[]={4912.0034,76.824837,16168.979};
+			name="Negades";
+			type="Empty";
+		};
+		class Item57
+		{
+			position[]={3941.8931,20.856552,17449.857};
+			name="Agios Konstantinos";
+			type="Empty";
+		};
+		class Item58
+		{
+			position[]={3028.4753,32.478519,18467.152};
+			name="Fotia Solar Facility";
+			type="Empty";
+		};
+		class Item59
+		{
+			position[]={7089.4717,113.46183,16461.031};
+			name="Kore";
+			type="Empty";
+		};
+		class Item60
+		{
+			position[]={8641.3926,182.4005,18257.34};
+			name="Syrta";
+			type="Empty";
+		};
+		class Item61
+		{
+			position[]={6182.8994,43,16243.91};
+			name="Kore Industrial District";
+			type="Empty";
+		};
+		class Item62
+		{
+			position[]={5340.3027,20.9163,14512.527};
+			name="Aggelochori Industrial District";
+			type="Empty";
+		};
+		class Item63
+		{
+			position[]={7401.4946,55.904224,15421.813};
+			name="Topolia";
+			type="Empty";
+		};
+		class Item64
+		{
+			position[]={7886.4194,279.73755,14638.125};
+			name="Agia Stemma";
+			type="Empty";
+		};
+		class Item65
+		{
+			position[]={7504.5928,22.465309,12090.187};
+			name="Kavirida";
+			type="Empty";
+		};
+		class Item66
+		{
+			position[]={10329.349,126.07661,19056.66};
+			name="Galati";
+			type="Empty";
+		};
+		class Item67
+		{
+			position[]={9428.4932,123.57411,20276.137};
+			name="Abdera";
+			type="Empty";
+		};
+		class Item68
+		{
+			position[]={4601.21,299.51163,21372.727};
+			name="Oreokastro";
+			type="Empty";
+		};
+		class Item69
+		{
+			position[]={4878.3135,351.58472,21942.172};
+			name="Thronos Castle";
+			type="Empty";
+		};
+		class Item70
+		{
+			position[]={9132.9717,16.018164,21534.971};
+			name="Abdera Airstrip";
+			type="Empty";
+		};
+		class Item71
+		{
+			position[]={21693.904,13.680146,14066.199};
+			name="Limni Refuge";
+			type="Empty";
+		};
+		class Item72
+		{
+			position[]={8909.1133,67.18177,7481.5889};
+			name="Agios Kosmas";
+			type="Empty";
+		};
+		class Item73
+		{
+			position[]={10804.772,234.14673,7623.979};
+			name="Skopos Wind Turbines";
+			type="Empty";
+		};
+		class Item74
+		{
+			position[]={11205.907,182.41,8712.4512};
+			name="Vikos Castle";
+			type="Empty";
+		};
+		class Item75
+		{
+			position[]={3083.4941,47.986855,13186.274};
+			name="Castle Kastro";
+			type="Empty";
+		};
+		class Item76
+		{
+			position[]={21487.973,14.661566,10907.674};
+			name="Aktinarki Ruins";
+			type="Empty";
+		};
+		class Item77
+		{
+			position[]={21314.973,6.3251147,10433.148};
+			name="Surf Club Refuge";
+			type="Empty";
+		};
+		class Item78
+		{
+			position[]={23567.27,91.349724,21110.943};
+			name="Iraklia Garrison";
+			type="Empty";
+		};
+		class Item79
+		{
+			position[]={25280.801,107.34878,21827.959};
+			name="Skiptro Radar Station";
+			type="Empty";
+		};
+		class Item80
+		{
+			position[]={25417.543,10.115023,20337.543};
+			name="Sofia Power Plant";
+			type="Empty";
+		};
+		class Item81
+		{
+			position[]={18296.428,47.48,15545.516};
+			name="Charkia Storage";
+			type="Empty";
+		};
+		class Item82
+		{
+			position[]={9874.6953,234.61156,19412.977};
+			name="Galati Garrison";
+			type="Empty";
+		};
+		class Item83
+		{
+			position[]={9212.1299,272.27527,19274.75};
+			name="Facility Delta";
+			type="Empty";
+		};
+		class Item84
+		{
+			position[]={5291.2002,39.598515,14246.053};
+			name="Facility Omega";
+			type="Empty";
+		};
+		class Item85
+		{
+			position[]={17076.957,23.764648,11330.424};
+			name="Pyrgos Quarry";
+			type="Empty";
+		};
+		class Item86
+		{
+			position[]={5413.6543,76.728249,17914.084};
+			name="Gori Factory";
+			type="Empty";
+		};
+		class Item87
+		{
+			position[]={7851.1064,230.31831,18010.672};
+			name="Agios Minas";
+			type="Empty";
+		};
+		class Item88
+		{
+			position[]={9529.3594,127.49332,15128.473};
+			name="Agios Dionysios Industrial District";
+			type="Empty";
+		};
+		class Item89
+		{
+			position[]={10253.087,106.472,14834.773};
+			name="Alikampos Industrial District";
+			type="Empty";
+		};
+		class Item90
+		{
+			position[]={14280.343,4.6763563,13029.164};
+			name="Sceptre Garrison";
+			type="Empty";
+		};
+		class Item91
+		{
+			position[]={17436.104,13.815557,13174.765};
+			name="Pyrgos Garrison";
+			type="Empty";
+		};
+		class Item92
+		{
+			position[]={23349.096,4.3755784,24188.492};
+			name="Sideras";
+			type="Empty";
+		};
+		class Item93
+		{
+			position[]={21629.309,24.909166,21250.766};
+			name="Iraklia Ruins";
+			type="Empty";
+		};
+		class Item94
+		{
+			position[]={20083.93,17.484379,20057.09};
+			name="Pefkas Ampitheatre";
+			type="Empty";
+		};
+		class Item95
+		{
+			position[]={10442.724,84.460632,17249.631};
+			name="Orino";
+			type="Empty";
+		};
+		class Item96
+		{
+			position[]={10985.137,19.460608,12628.912};
+			name="Therisa Solar Farm";
+			type="Empty";
+		};
+		class Item97
+		{
+			position[]={8231.2559,14.179117,10886.905};
+			name="Edessa Industrial District";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={15283.97,0.023022562,15705.082};
+			a=14000;
+			b=12000;
+			rectangular=1;
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="island";
+			class Effects
+			{
+			};
+		};
 	};
 };
 class Intro
