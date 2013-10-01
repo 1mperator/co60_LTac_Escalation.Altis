@@ -117,6 +117,7 @@ hint format ["Houses: %1", count blah];
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 TODO: Write a Helper Function that goes through each AO counts the following:
 
@@ -152,3 +153,6 @@ TODO: Write a Helper Function that goes through each AO counts the following:
 // Main Loop 
 =======
 diag_log blah; */ 
+=======
+diag_log blah; */ 
+>>>>>>> 1cb6c4c51ccd69604da32c8e816cf01272031fd7
