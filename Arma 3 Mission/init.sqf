@@ -114,6 +114,7 @@ pos = getMarkerPos "Kavala";
 
 blah = nearestObjects [pos, ["House"], 175];
 hint format ["Houses: %1", count blah];
+<<<<<<< HEAD
 
 TODO: Write a Helper Function that goes through each AO counts the following:
 
@@ -147,3 +148,6 @@ TODO: Write a Helper Function that goes through each AO counts the following:
 // Sync JIP Players
 
 // Main Loop 
+=======
+diag_log blah; */ 
+>>>>>>> 1cb6c4c51ccd69604da32c8e816cf01272031fd7
