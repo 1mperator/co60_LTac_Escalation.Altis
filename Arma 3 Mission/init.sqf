@@ -72,7 +72,6 @@ AO_ARRAY =
 	["Telos Research Facility", "Science"],
 	["Facility Delta", "Science"],
 	["Facility Omega", "Science"],
-	["Facility Epsilon", "Science"],
 	// Airfields 
 	["Molos Airfield", "Airfield"],
 	["Almyra Airfield", "Airfield"],
@@ -95,7 +94,6 @@ AO_ARRAY =
 	["Fotia Solar Facility", "Power"],
 	["Skopos Wind Turbines", "Power"],
 	["Therisa Solar Farm", "Power"],
-	["Didymos Wind Farm", "Power"],
 	// Ruins
 	["Aktinarki Ruins", "Ruins"],
 	["Thronos Castle", "Ruins"],
@@ -114,45 +112,4 @@ pos = getMarkerPos "Kavala";
 
 blah = nearestObjects [pos, ["House"], 175];
 hint format ["Houses: %1", count blah];
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-TODO: Write a Helper Function that goes through each AO counts the following:
-
-	Houses
-		Inhabited
-		Abandoned			
-		Ruins
-	Stores
-		Inhabited
-		Abandoned
-		Ruins
-	Churches
-	Industrial Buildings
-	Fuel Stations / Containers
-	Power Buildings (Solar, Power Plant, Wind Turbine)
-	Military Buildings
-	Gas Stations
-	Cargo Containers
-	Archaelogical Ruins
-
-	Writes all of this information to a RPT file. 
-	This is for calculations for a realistic economy.
-*/ 
-
-
-
-// Initialize Mission
-
-// Initialize Player Scripts
-
-// Sync JIP Players
-
-// Main Loop 
-=======
 diag_log blah; */ 
-=======
-diag_log blah; */ 
->>>>>>> 1cb6c4c51ccd69604da32c8e816cf01272031fd7
