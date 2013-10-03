@@ -24,8 +24,8 @@ Ideally, this is as transparent as possible so that you can get away with not ha
 
 So there are some magic strings that make it work.
 
-    - `reloader:load mydll` will try to load the mydll.dll library. If it fails, it will try to put a message in the return value of callExtension. It should be safe to call this without unloading first.
-    - `reloader:unload` will cause this extension (and therefore the arma process) to let go of the dll so that you can replace it.
+- `reloader:load mydll` will try to load the mydll.dll library. If it fails, it will try to put a message in the return value of callExtension. It should be safe to call this without unloading first.
+- `reloader:unload` will cause this extension (and therefore the arma process) to let go of the dll so that you can replace it.
 
 Any calls to this dll that do not match those magic strings will be forwarded to the dll loaded with `reloader:load`.
 
