@@ -103,7 +103,7 @@ AO_ARRAY =
 	["Pefkas Ampitheatre", "Ruins"]
 ];
 
-/* Crap Code - Don't worry about this.
+/* Crap Code  Don't worry about this.
 pos = getMarkerPos "Kavala";
 // House
 // Church
@@ -112,4 +112,38 @@ pos = getMarkerPos "Kavala";
 
 blah = nearestObjects [pos, ["House"], 175];
 hint format ["Houses: %1", count blah];
-diag_log blah; */ 
+diag_log blah; 
+
+TODO: Write a Helper Function that goes through each AO counts the following:
+
+	Houses
+		Inhabited
+		Abandoned			
+		Ruins
+	Stores
+		Inhabited
+		Abandoned
+		Ruins
+	Churches
+	Industrial Buildings
+	Fuel Stations / Containers
+	Power Buildings (Solar, Power Plant, Wind Turbine)
+	Military Buildings
+	Gas Stations
+	Cargo Containers
+	Archaelogical Ruins
+
+	Writes all of this information to a RPT file. 
+	This is for calculations for a realistic economy.
+*/ 
+
+
+
+// Initialize Mission
+
+// Initialize Player Scripts
+
+// Sync JIP Players
+
+// Main Loop 
+

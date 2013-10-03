@@ -19,6 +19,6 @@ Build Instructions
 TODO
 ---
 
-After loading the dll, arma doesn't appear to let it go ever at all. So one way to solve this is by having two dlls, arma loads a bootstrappy dll that loads an actual dll, the bootstrappy dll can reload the actual dll when we want it to. Forwarding calls should be  trivial?
+After loading the dll, arma doesn't appear to let it go ever at all. So one way to solve this is by having two dlls, arma loads a bootstrappy dll that loads an actual dll, the bootstrappy dll can reload the actual dll when we want it to. Forwarding calls should be trivial?
 
 Create a console and dump stdout to it?
