@@ -35,6 +35,9 @@ if call_extension('test') != '=D test':
 if call_extension('reloader:unload') != '1':
     raise Exception
 
+if call_extension('test') != 'No extension loaded yet!':
+    raise Exception
+
 # If we move bar.dll, we shouldn't be able to load it
 os.rename('bar.dll', '_bar.dll')
 try:

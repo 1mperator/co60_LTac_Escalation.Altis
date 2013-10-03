@@ -14,6 +14,7 @@ static ExtensionFn extensionfn = 0;
 bool UnloadExtension() {
     if (FreeLibrary(extension)) {
         extension = 0;
+        extensionfn = 0;
         return true;
     }
     return false;
