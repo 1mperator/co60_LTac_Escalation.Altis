@@ -22,9 +22,11 @@ i ran setenv
 
 Good, now go into `bld` and do `cmake ..`. This will make `cmake` do magical things. I think you only need to run CMake if your CMakeLists.txt changes, but don't quote me on that.
 
-To actually compile the dlls, be in the `bld` directory and run `msbuild`. This is assuming CMake detected you were using msvc and generated vcproj files and stuff. Anyway, run that when you modify a source file. I think.
+To actually compile the DLLs for a project, be in the `bld` directory and run `vcbuild myproject.vcproj RELEASE`. This is assuming CMake detected you were using msvc and generated vcproj files and stuff. Anyway, run that when you modify a source file. I think.
 
-TODO
+i has dlls but wat aboot arma?
 ---
 
-Distribution? Getting the DLLs into a place where ArmA can load them.
+At the moment, `CMakeLists.txt` is designed such that the timer.dll project thingy will be installed if you build the `INSTALL.vcproj` project. So, again, after running `bootstrap.sh` you should have a `bld` directory, go in there, run `cmake ..` to produce your vcproj files. Run `vcbuild timer.vcproj RELEASE` to build the timer DLL and finally `vcbuild INSTALL.vcproj RELEASE` to shove it into the directory that the ARMADIR environment variable points to (or at least, pointed to when you ran cmake).
+
+It's just that easy! =D
