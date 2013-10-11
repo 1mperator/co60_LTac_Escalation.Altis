@@ -9,15 +9,13 @@ install(TARGETS timer DESTINATION $ENV{ARMADIR})
 add_library(escalationdb SHARED escalationdb.cpp)
 
 ### sqlite3 stuff - ensure sqlite sources are available before a build system is generated
+set(SQLITELIBURL "https://www.sqlite.org/2013/sqlite-amalgamation-3080002.zip")
+set(SQLITELIBHASH "99055b894259dc85cfb2da92971904f74ec3aa3e")
+set(SQLITESRC "${PROJECT_BINARY_DIR}/sqlite-amalgamation-3080002")
+set(SQLITEDOWNLOAD "${PROJECT_SOURCE_DIR}/externals/sqlite.zip")
 
-set(SQLITELIBURL "https://www.sqlite.org/2013/sqlite-dll-win32-x86-3080002.zip")
-set(SQLITEDOWNLOAD "${PROJECT_SOURCE_DIR}/tmp/sqlite.zip")
-set(SQLITEDEF "${PROJECT_BINARY_DIR}/sqlite3.def")
-set(SQLITELIB "${PROJECT_BINARY_DIR}/sqlite3.lib")
-set(SQLITESHARED "${PROJECT_BINARY_DIR}/sqlite3.dll")
-set(SQLITELIBHASH "73849410ab5593d3659c049f76907d7316c7e607")
+# Ensures the downloaded archive exists and matches the expected hash
 set(SQLITELIB_NEEDS_DOWNLOAD true)
-
 if(EXISTS ${SQLITEDOWNLOAD})
     file(SHA1 ${SQLITEDOWNLOAD} SQLITELIBHASH_FOUND)
     if("${SQLITELIBHASH}" EQUAL "${SQLITELIBHASH_FOUND}")
@@ -25,11 +23,17 @@ if(EXISTS ${SQLITEDOWNLOAD})
     endif()
 endif()
 if(${SQLITELIB_NEEDS_DOWNLOAD})
-    file(DOWNLOAD ${SQLITELIBURL} ${SQLITEDOWNLOAD} SHOW_PROGRESS)
-    execute_process(COMMAND "${CMAKE_COMMAND}" "-E" "tar" "xvf" "${SQLITEDOWNLOAD}")
-    execute_process(COMMAND "lib" "/def:${SQLITEDEF}" "/OUT:${SQLITELIB}")
+    message("sqlite3 sources missing or invalid, I shall download them!")
+    file(DOWNLOAD ${SQLITELIBURL} ${SQLITEDOWNLOAD}
+        SHOW_PROGRESS
+        EXPECTED_HASH SHA1=${SQLITELIBHASH})
 endif()
 
-target_link_libraries(escalationdb ${SQLITELIB})
-
+add_custom_command(OUTPUT ${SQLITESRC}/sqlite3.c
+    COMMAND ${CMAKE_COMMAND} -E tar xfv ${SQLITEDOWNLOAD}
+    DEPENDS ${sQLITEDOWNLOAD}
+    )
+target_include_directories(escalationdb PRIVATE ${SQLITESRC})
+add_library(SQLITELIB ${SQLITESRC}/sqlite3.c)
+target_link_libraries(escalationdb SQLITELIB)
 install(TARGETS escalationdb DESTINATION $ENV{ARMADIR})

@@ -22,10 +22,17 @@ i ran setenv
 
 Good, now go into `bld` and do `cmake ..`. This will make `cmake` do magical things. I think you only need to run CMake if your CMakeLists.txt changes, but don't quote me on that.
 
-To actually compile the DLLs for a project, be in the `bld` directory and run `vcbuild myproject.vcproj RELEASE`. This is assuming CMake detected you were using msvc and generated vcproj files and stuff. Anyway, run that when you modify a source file. I think.
+Assuming CMake is generating for msvc, to actually compile the DLLs for a project, be in the `bld` directory and run `msbuild Escalation.sln`. That will try to build everything.
+
+The `/target` (or `/t`) switch can be used to build a particular target thingy; `msbuild Escalation.sln /t:escalationdb` will build the escalationdb DLL and its dependencies.
+
+The `/property` (or `/p`) switch is for setting properties. I don't really know what properties are, but they can twiddle some things like whether to build release or debug. Debug is built by default, `msbuild Escalation.sln /p:Configuration=Release` uses the property switch to build release.
+
 
 i has dlls but wat aboot arma?
 ---
+
+*Beware, this section is full of lies and falsehoods*
 
 At the moment, `CMakeLists.txt` is designed such that the timer.dll project thingy will be installed if you build the `INSTALL.vcproj` project. So, again, after running `bootstrap.sh` you should have a `bld` directory, go in there, run `cmake ..` to produce your vcproj files. Run `vcbuild timer.vcproj RELEASE` to build the timer DLL and finally `vcbuild INSTALL.vcproj RELEASE` to shove it into the directory that the ARMADIR environment variable points to (or at least, pointed to when you ran cmake).
 
