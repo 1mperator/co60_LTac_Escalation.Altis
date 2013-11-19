@@ -2,7 +2,7 @@
  */
 #include "codec.h"
 
-#define INC(v) v = v +1
+#define INC(v) v = v + 1
 #define INCSET(array, pos, v) \
     array set [pos, v]; \
     INC(pos); \
